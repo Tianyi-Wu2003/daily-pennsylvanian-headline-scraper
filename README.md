@@ -37,7 +37,7 @@ The main libraries used are:
 - [`bs4`](https://www.crummy.com/software/BeautifulSoup/) - BeautifulSoup for parsing HTML
 - [`requests`](https://requests.readthedocs.io/en/latest/) - Making HTTP requests to scrape web pages
 - [`loguru`](https://github.com/Delgan/loguru) - Logging errors and run info
-- [`pytz`](https://github.com/stub42/pytz) - Handling datetimes and timezones  
+- [`pytz`](https://github.com/stub42/pytz) - Handling datetimes and timezones
 - [`waybackpy`](https://github.com/akamhy/waybackpy/) - Scraping web archives (optional)
 
 ## Getting Started
@@ -130,8 +130,12 @@ But it is important to use it responsibly and ethically. Here are some guideline
 
 7. Assess if decisions made using the data could contribute to bias, discrimination or unfair profiling.
 
-8. Validate quality of scraped data, and recognize limitations in ensuring relevance and accuracy inherent with web data.  
+8. Validate quality of scraped data, and recognize limitations in ensuring relevance and accuracy inherent with web data.
 
 9. Document your scraping process thoroughly for replicability, transparency and accountability.
 
 10. Continuously re-evaluate your scraping program against applicable laws and ethical principles.
+
+## Approaches
+
+I edited the code so that it can now srape the most recent podcast on the website. Similar to the example, I send a request and find my target element on the page. Then, I accessed its text. All datas are saved in a dictionary, so I can add more features to it in the future.
